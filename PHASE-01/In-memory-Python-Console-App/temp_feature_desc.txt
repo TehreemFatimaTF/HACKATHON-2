@@ -1,0 +1,32 @@
+In-Memory Todo Console Application - Basic Level Features
+Target audience: Developer building the application and future contributors
+Focus: Implement the 5 core basic features of a command-line todo app with clean, readable code
+Success criteria:
+- User can add a new task with a required title and optional description
+- User can view all tasks showing: ID, status indicator ([ ] or [✓]), title, and description
+- User can update the title or description of an existing task by providing its ID
+- User can delete a task by its ID
+- User can mark a task as complete or incomplete by its ID
+- Application provides a clear, text-based menu with numbered options
+- Runs in an infinite loop until the user explicitly chooses to exit
+- All operations provide clear success/error feedback
+- Invalid inputs (e.g., non-existent ID, empty title) are handled gracefully with helpful messages
+- Application never crashes due to user input
+
+Constraints:
+- In-memory storage only — no file I/O, no database, no persistence across runs
+- Use only Python standard library (no third-party packages)
+- Task model must include at minimum: id (int), title (str), description (str or None), completed (bool)
+- IDs are assigned sequentially starting from 1 and never reused in a single run
+- Command-line interface must be simple and text-based
+- Support only the 5 basic operations plus list and exit
+
+Not building:
+- Persistence to disk or file
+- Task priorities, due dates, categories, tags, or subtasks
+- Sorting or filtering of task list
+- Undo/redo functionality
+- Multiple users or authentication
+- GUI or web interface
+- Unit tests (reserved for future phase)
+- Advanced input parsing libraries
